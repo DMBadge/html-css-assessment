@@ -1,0 +1,87 @@
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  /*background: #CCC;*/
+  width: 100%;
+
+}
+nav{
+  display: flex;
+  flex-wrap: nowrap;
+  line-height:80px;
+}
+nav.desktop div{
+  flex-grow: 1;
+  text-align:center;
+  font-size: 26px;
+  color: #FFF;
+  font-weight: bold;
+  /*align-self:center;*/
+}
+nav.mobile{
+  display:none;
+  padding: 0 30px;
+}
+nav.mobile div{
+  flex-grow: 1;
+  font-size: 26px;
+  color: #FFF;
+  align-self:center;
+}
+.hamburger .fa{
+  padding: 15px 18px;
+  border: 1px solid #FFF;
+  border-radius: 55%;
+}
+.social-media{
+  text-align: right;
+}
+.social-media .fa{
+  margin-right: 20px;
+}
+.hero-header{
+  height: calc(100vh - 160px);
+  background: url(/img/main-bg.jpeg) center center no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column nowrap;
+  font-weight: bold;
+}
+.hero-content{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.hero-title{
+  font-size:140px;
+}
+.hero-sub{
+  font-size:35px;
+  text-transform: uppercase;;
+}
+.hero-more .fa{
+  padding: 15px 25px;
+  background: #FFF;
+  color: #CCC;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 640px){
+  nav.desktop{
+    display: none;
+  }
+  nav.mobile{
+    display: flex;
+  }
+}
