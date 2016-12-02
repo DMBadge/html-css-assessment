@@ -43,7 +43,7 @@ nav.mobile div{
 }
 .hero-header{
   height: calc(100vh - 160px);
-  background: url(/img/main-bg.jpeg) center center no-repeat;
+  background: url('img/main-bg.jpeg') center center no-repeat;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
   color: #FFF;
